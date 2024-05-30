@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+/* #add-background{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNwnnshQoGpXpGzD7CdXDOjX83IWpBT2-xNA&s');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    
+} */
+.a-2 {
+    /* display: block; */
+    width: 100%;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.a-2 button {
+    width: 100%;
+}
