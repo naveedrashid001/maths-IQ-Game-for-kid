@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level-2</title>
+    <!-- connect js file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- link for Emoje -->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            /* corrected from 0px */
+            text-transform: capitalize;
+        }
+
+        .w-80 {
+            width: 80%;
+            margin: 0 auto;
+            /* Center the button within its container */
+        }
+
+        .card {
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center text-bold text-white bg-dark p-2">
+                <h3>Level 2 <i class="mb-1 em em-grinning" aria-role="presentation" aria-label="GRINNING FACE" style="width: 27px;"></i></h3>
+            </div>
+            <!-- left pic -->
+            <div class="col-sm-4 mt-5">
+                <img src="https://t3.ftcdn.net/jpg/02/94/52/66/360_F_294526673_PN9NBaXVIviQEfNpnwuO3MtuiA8upzj4.jpg" width="324px" height="343px" alt="">
+            </div>
+            <!-- center div -->
+            <div class="col-sm-4  mt-2 text-bold text-center">
+                <div class="card mt-5">
+                    <h3 class="p-2">enter correct answer</h3>
+                    <hr
+                        style="width: 90%; margin: 8px auto 0px auto; background-color: green; border: 1px solid green;">
+                    <!-- show random number -->
+                    <div class="d-flex justify-content-center mt-2">
+                        <div class="col-sm-3">
+                            <button id="random1" class="btn btn-secondary"></button>
+                        </div>
+                        <div class="col-sm-1 fw-bold">+</div>
+                        <div class="col-sm-3">
+                            <button id="random2" class="btn btn-secondary"></button>
+                        </div>
+                        <div class="col-sm-1 fw-bold">=</div>
+                        <div class="col-sm-3">
+                            <button id="showanswer" class="btn btn-secondary fw-bold">?</button>
+                        </div>
+                    </div>
+                    <!-- input field -->
+                    <div class="d-flex justify-content-center mt-4 mb-2">
+                        <div class="col-sm-7">
+                            <input id="input-answer" type="text" placeholder="enter your answer"
+                                class="form-control text-center">
+                        </div>
+                        <div class="col-sm-3">
+                            <button id="submit" class="btn btn-danger">submit</button>
+                        </div>
+                    </div>
+                    <!-- wrong right -->
+                    <div class="d-flex gap-1 fw-bold justify-content-center mt-1 mb-2">
+                        <div class="col-sm-5">
+                            <button style="border-radius: 50%;" id="right" class="btn">Right</button>
+                        </div>
+                        <div class="col-sm-5">
+                            <button style="border-radius: 50%;" id="wrong" class="btn">Wrong</button>
+                        </div>
+                    </div>
+                    <!-- display button -->
+                    <div class="d-flex gap-1 fw-bold justify-content-center mt-1 mb-2">
+                        <div class="col-sm-10">
+                            <button id="display" class="btn btn-secondary  form-control">display Loading...</button>
+                        </div>
+                    </div>
+                    <!-- next and close button -->
+                    <div class="d-flex gap-1 fw-bold justify-content-center mt-1 mb-2">
+                        <div class="col-sm-5">
+                            <button id="refresh" class="btn btn-primary form-control">Refresh</button>
+                        </div>
+                        <div class="col-sm-5">
+                            <a href="../main.html"><button id="close"
+                                    class="btn btn-danger form-control">close</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- right pic -->
+            <div class="col-sm-4 mt-5">
+                <img src="https://clipart-library.com/images/rcLnpag7i.jpg" width="300px" height="343px" alt="">
+            </div>
+        </div>
+        <!-- see results -->
+        <div class="row">
+            <div class="col-sm-5 offset-1">
+                <div class="card mt-5 mb-3 ">
+                    <button id="SEE-RESULT" class="btn btn-dark fw-bold mt-1 form-control">see result</button>
+                    <p id="showresuts"></p>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="card mt-5 mb-3 ">
+                    <button id="SEE-percentage" class="btn btn-dark fw-bold mt-1 form-control">see percentage</button>
+                    <p id="showpercentage" class="ms-2"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="level2-desable">
+            <div class="col-sm-4 offset-4 mb-5">
+                <div class="card">
+                    <p style="text-align: center; margin-top: 10px; font-weight: bold;">Achive At-least 6 attempt and 60 percentage</p>
+                    <p id="saycongrate" class="fw-bold" style="text-align: center; color: red; "></p>
+                <button id="Level-2" class="btn btn-success fw-bold  mb-2 form-control"><a href="./level3.html" style="text-decoration: none; color: white;">Level 3 </a></button>
+                   
+
+                </div>
+            </div>
+        </div>
+
+
+        <script src="./level2.js"></script>
+</body>
+
+</html>

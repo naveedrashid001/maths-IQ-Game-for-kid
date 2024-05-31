@@ -1,16 +1,14 @@
-*{
-    padding: 0px;
-    margin: 0px;
+body{
+
+    /* content: ""; */
+    background-image: url("https://pics.craiyon.com/2023-10-26/7ce97018ba5743f3ab110dda611f7e5b.webp");
+   background-size: cover;
+    opacity: 0.9;
+    width: 100%;
+    height: 600px;
     box-sizing: border-box;
     text-transform: capitalize;
 }
-/* #add-background{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNwnnshQoGpXpGzD7CdXDOjX83IWpBT2-xNA&s');
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 100px;
-    
-} */
 .a-2 {
     /* display: block; */
     width: 100%;
