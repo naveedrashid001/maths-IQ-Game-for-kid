@@ -20,10 +20,10 @@ saycongrate.disabled=true;
 
 // Generate random value function
 function generaterandomvalue1() {
-    return Math.floor(Math.random() * 50);
+    return Math.floor(Math.random() * 10);
 }
 function generaterandomvalue2() {
-    return Math.floor(Math.random() * 50);
+    return Math.floor(Math.random() * 10);
 }
 random1.innerHTML = generaterandomvalue1();
         random2.innerHTML = generaterandomvalue2();
@@ -58,7 +58,7 @@ submit.addEventListener("click", function () {
     const inputanswer = parseInt(inputAnswer.value);
     if (!isNaN(inputanswer)) {
         showanswer.innerHTML = inputanswer;
-        const sum = parseInt(random1.innerHTML) + parseInt(random2.innerHTML);
+        const sum = parseInt(random1.innerHTML) * parseInt(random2.innerHTML);
         if (inputanswer === sum) {
             // Add the correct answer to the results array
             results.push({ input: inputanswer, isCorrect: true });

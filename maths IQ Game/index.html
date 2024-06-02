@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths IQ Check</title>
+    <link rel="stylesheet" href="./index-style.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>NATTI .</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <!-- <li><a class="link" href="#">home</a></li> -->
+                <!-- <li><a href="#" class="link"></a></li>  -->
+                <!-- <li><a href="#" class="link">Services</a></li> -->
+                <!-- <li><a href="#" class="link">About</a></li> -->
+            <!-- home -->
+                <li><a class="link" data-bs-toggle="collapse" href="#collapsehome" role="button" aria-expanded="false"
+                        aria-controls="collapsehome">
+                        home
+                    </a>
+                </li>
+                <!-- blogs -->
+                <li><a class="link" data-bs-toggle="collapse" href="#collapseblogs" role="button" aria-expanded="false"
+                        aria-controls="collapseblogs">
+                        Blog
+                    </a>
+                </li>
+                <!-- servises -->
+                <li><a class="link" data-bs-toggle="collapse" href="#collapseServices" role="button"
+                        aria-expanded="false" aria-controls="collapseServices">
+                        Services
+                    </a>
+                </li>
+                <!-- about -->
+                <li><a class="link" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        about
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+            <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+    <div class="collapse mt-5" id="collapseExample">
+        <div class="row">
+            <div class="col-sm-6 offset-3 mt-5">
+                <div class="card">
+                    <span class="fw-bold">"I am deeply thankful to my best friend, Awais Saleem, for his
+                        invaluable
+                        inspiration and support in
+                        conceiving the idea for this website. His creativity and encouragement have been
+                        a guiding light
+                        throughout this journey, motivating me to bring this project to life. Awais's
+                        unwavering belief
+                        in
+                        my abilities has been a source of strength and confidence. This website stands
+                        as a testament to
+                        our
+                        shared vision and his profound impact on my work. I am truly grateful for his
+                        friendship and the
+                        brilliant ideas he has contributed to this endeavor."</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- home  -->
+    <div class="collapse mt-5" id="collapsehome">
+        <div class="row">
+            <div class="col-sm-3 offset-4  mt-5">
+                <div class="card text-center">
+                    <span class="fw-bold">currently home page unavbalible</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog -->
+    <div class="collapse mt-5" id="collapseblogs">
+        <div class="row">
+            <div class="col-sm-3 offset-4  mt-5">
+                <div class="card text-center">
+                    <span class="fw-bold">currently Blogs unavbalible</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- servises -->
+    <div class="collapse mt-5" id="collapseServices">
+        <div class="row">
+            <div class="col-sm-3 offset-4  mt-5">
+                <div class="card text-center">
+                    <span class="fw-bold">currently our Services unavbalible</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- button -->
+    <div id="container">
+        <a href="./main.html" class="button button--hoo">
+            <div class="button__wrapper">
+                <span class="button__text">Lets Go</span>
+            </div>
+            <div class="characterBox">
+                <div class="character wakeup">
+                    <div class="character__face"></div>
+                    <div class="charactor__face2"></div>
+                    <div class="charactor__body"></div>
+                </div>
+                <div class="character wakeup">
+                    <div class="character__face"></div>
+                    <div class="charactor__face2"></div>
+                    <div class="charactor__body"></div>
+                </div>
+                <div class="character">
+                    <div class="character__face"></div>
+                    <div class="charactor__face2"></div>
+                    <div class="charactor__body"></div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function myMenuFunction() {
+            var i = document.getElementById("navMenu");
+            if (i.className === "nav-menu") {
+                i.className += " responsive";
+            } else {
+                i.className = "nav-menu";
+            }
+        }
+    </script>
+</body>
+
+</html>

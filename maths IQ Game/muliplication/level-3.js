@@ -9,24 +9,24 @@ const submit = document.getElementById('submit');
 const display = document.getElementById("display");
 const close = document.getElementById("close");
 const showresults = document.getElementById("showresults");
-const SEERESULT =document.getElementById("SEE-RESULT")
-const seepercentage =document.getElementById("SEE-percentage");
-const showpercentage=document.getElementById('showpercentage');
+const SEERESULT = document.getElementById("SEE-RESULT")
+const seepercentage = document.getElementById("SEE-percentage");
+const showpercentage = document.getElementById('showpercentage');
 const Level2btn = document.getElementById('Level-2');
-const saycongrate =document.getElementById("saycongrate");
-saycongrate.disabled=true;
- Level2btn.disabled=true;
- 
+const saycongrate = document.getElementById("saycongrate");
+saycongrate.disabled = true;
+Level2btn.disabled = true;
+
 
 // Generate random value function
 function generaterandomvalue1() {
-    return Math.floor(Math.random() * 50);
+    return Math.floor(Math.random() * 15);
 }
 function generaterandomvalue2() {
-    return Math.floor(Math.random() * 50);
+    return Math.floor(Math.random() * 30);
 }
 random1.innerHTML = generaterandomvalue1();
-        random2.innerHTML = generaterandomvalue2();
+random2.innerHTML = generaterandomvalue2();
 
 // Initialize a counter for the refresh button clicks
 let refreshCounter = 0;
@@ -58,7 +58,7 @@ submit.addEventListener("click", function () {
     const inputanswer = parseInt(inputAnswer.value);
     if (!isNaN(inputanswer)) {
         showanswer.innerHTML = inputanswer;
-        const sum = parseInt(random1.innerHTML) + parseInt(random2.innerHTML);
+        const sum = parseInt(random1.innerHTML) * parseInt(random2.innerHTML);
         if (inputanswer === sum) {
             // Add the correct answer to the results array
             results.push({ input: inputanswer, isCorrect: true });
@@ -90,10 +90,10 @@ seepercentage.addEventListener("click", function () {
     const totalAttempts = results.length;
     const correctAttempts = results.filter(result => result.isCorrect).length;
     const percentageCorrect = totalAttempts > 0 ? (correctAttempts / totalAttempts) * 100 : 0;
-    if(totalAttempts>3 && percentageCorrect>39){
-        Level2btn.disabled=false;
-        saycongrate.disabled=false;
-        saycongrate.innerHTML="Congragulation You Win! "
+    if (totalAttempts > 6 && percentageCorrect > 69) {
+        Level2btn.disabled = false;
+        saycongrate.disabled = false;
+        saycongrate.innerHTML = "Congragulation You Win! "
     }
     showpercentage.innerHTML = `Correct Answers: ${correctAttempts}, Total Attempts: ${totalAttempts}, Percentage: ${percentageCorrect.toFixed(2)}%`;
 });
