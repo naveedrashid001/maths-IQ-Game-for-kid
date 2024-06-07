@@ -1,6 +1,7 @@
 body{
     box-sizing: border-box;
     text-transform: capitalize;
+    overflow-x: hidden;
 }
 /* .right{
     margin-right: 30px;
@@ -8,6 +9,7 @@ body{
 .a-2 {
     /* display: block; */
     width: 100%;
+    overflow-x: hidden;
     margin-top: 1rem;
     text-decoration: none;
 }
