@@ -1,11 +1,10 @@
-body{
+body {
     box-sizing: border-box;
     text-transform: capitalize;
-    overflow-x: hidden;
-}
-/* .right{
-    margin-right: 30px;
-} */
+    width: 100%;
+    overflow-x: hidden; /* Changed to hidden */
+    overflow-y: auto;   /* Added this line */
+} 
 .a-2 {
     /* display: block; */
     width: 100%;
@@ -22,7 +21,6 @@ body{
     border-left: 6px solid peru;
     vertical-align: middle;
     margin-top: 20px;
-    margin-left: 40px;
     height: 330px;
   }
 /* button css */

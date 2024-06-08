@@ -7,6 +7,8 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
+    width: 100%;
+    overflow: none;
     background: url("https://as1.ftcdn.net/v2/jpg/02/85/48/82/1000_F_285488226_byR6hPVcxZ5ncjoU2n6meOm9LRSPzOlR.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,6 +21,7 @@ body{
     padding: 15px;
     text-align: justify;
     background-color: #52E2E9;
+    border: #52E2E9;
 }
 .wrapper{
     display: flex;
