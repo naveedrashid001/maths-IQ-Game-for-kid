@@ -138,3 +138,12 @@ body{
     align-items : center ;
     background : #FFF ;
 }
+#madeby{
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 4px;
+    background-color: black;
+}
